@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <div id="up">
+            <a href="#"><img src="round_logo.png"  class="logo"></a>
+            <ul>
+                <li><a href="#" class="home_nav">Home</a></li>
+                 <li><a href="#">Menu</a></li>
+                  <li><a href="#">What's new</a></li>
+                   <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+                <div class="textBox">
+                    <h2><span class="one_span">AAO KABHI</span><br><span class="second_span">THEKA PE!</span><br><span class="third_span">We Roast,Brew And Serve Fresh Coffee</span></h2>
+                    <p>Theka Coffee Is A New-Gen Cafe Chain Trying To Change How Coffee Is Served .<br>We Serve 100% Arabica Freshly Brewed Coffee At The Most Affordable Price Across INDIA.<br> We Are Less Cappuccino’s
+                       And Latte’s And More Indian. VOCAL BHI , AUR LOCAL BHI.</p>
+                       <a href="#">Learn More</a>
+                </div>
+        
+        <div class="imageBox">
+            <img src="blue.jpg" class="theka">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="blue_thumb.jpg" onclick="imgSlider('blue.jpg')"></li>
+        <li><img src="purple_thumb.jpg"  onclick="imgSlider('purple.jpg')"></li>
+        <li><img src="red_thumb.jpg"  onclick="imgSlider('red.jpg')"></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+            document.querySelector('.theka').src=anything;
+        }
+    </script>
+</body>
+</html>
