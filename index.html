@@ -29,19 +29,24 @@
                 </div>
         
         <div class="imageBox">
-            <img src="blue.jpg" class="theka">
+            <img src="blue_mint_coffie-removebg-preview.png" class="theka">
         </div>
     </div>
     <ul class="thumb">
-        <li><img src="blue_thumb.jpg" onclick="imgSlider('blue.jpg')"></li>
-        <li><img src="purple_thumb.jpg"  onclick="imgSlider('purple.jpg')"></li>
-        <li><img src="red_thumb.jpg"  onclick="imgSlider('red.jpg')"></li>
+        <li><img src="blue_mint_coffie-removebg-preview.png" onclick="imgSlider('blue_mint_coffie-removebg-preview.png');changeCircleColor('#B9EBFF')"></li>
+        <li><img src="purple_coffie-removebg-preview.png"  onclick="imgSlider('purplee.png');changeCircleColor('#A5E5')"></li>
+        <li><img src="red_coffie-removebg-preview.png"  onclick="imgSlider('redd.png');changeCircleColor('#FFCCBB')"></li>
     </ul>
     </section>
     <script type="text/javascript">
         function imgSlider(anything)
         {
             document.querySelector('.theka').src=anything;
+        }
+        function changeCircleColor(color)
+        {
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
         }
     </script>
 </body>
